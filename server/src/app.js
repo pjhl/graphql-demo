@@ -1,22 +1,16 @@
+const fs = require('fs')
+const path = require('path')
 const Koa = require('koa')
 const koaHelmet = require('koa-helmet')
 const koaBodyParser = require('koa-bodyparser')
 const koaCORS = require('koa-cors')
-const { ApolloServer, gql } = require('apollo-server-koa')
+const { ApolloServer } = require('apollo-server-koa')
+const resolvers = require('./resolvers')
 
 // Construct a schema, using GraphQL schema language
-const typeDefs = gql`
-  type Query {
-    hello: String
-  }
-`
-
-// Provide resolver functions for your schema fields
-const resolvers = {
-  Query: {
-    hello: () => 'Hello world!'
-  }
-}
+const typeDefs = fs.readFileSync(path.join(__dirname, 'schema.gql'), {
+  encoding: 'utf-8'
+})
 
 const server = new ApolloServer({ typeDefs, resolvers })
 
