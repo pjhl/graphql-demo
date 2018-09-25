@@ -1,0 +1,14 @@
+{
+  "name": "graphql-demo-server",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Graphql server with koa and apolloserver",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

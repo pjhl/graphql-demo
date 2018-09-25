@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  server:
+    build: ./server
+    restart: always
+    ports:
+      - '8081:80'
+    volumes:
+      - './server/src:/app/src:ro'
