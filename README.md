@@ -2,6 +2,8 @@
 
 This application is a simple personal user page like facebook posts.
 
+![Sketch](docs/sketch.png)
+
 Features:
 
 * User can add post
