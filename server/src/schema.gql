@@ -1,3 +1,26 @@
 type Query {
   hello: String
+  my: User
+}
+type Avatar {
+  medium: String
+  small: String
+}
+type User {
+  id: ID!
+  name: String!
+  username: String!
+  avatar: Avatar
+}
+type Like {
+  id: ID!
+  post: Post!
+  user: User!
+}
+type Post {
+  id: ID!
+  author: User!
+  body: String
+  date: Int!
+  likes: [Like]
 }
