@@ -17,10 +17,15 @@ type Like {
   post: Post!
   user: User!
 }
+type PostLikes {
+  total: Int!
+  currentUserLiked: Boolean!
+  records: [Like]
+}
 type Post {
   id: ID!
   author: User!
   body: String
   date: String!
-  likes: [Like]
+  likes: PostLikes
 }

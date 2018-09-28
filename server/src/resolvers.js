@@ -19,7 +19,14 @@ const resolvers = {
       return users.getById(post.authorId)
     },
     async likes (post) {
-      return likes.getByPostId(post.id)
+      const records = await likes.getByPostId(post.id)
+      return {
+        total: records.length,
+        currentUserLiked: Boolean(records.find(el =>
+          el.userId === mockCurrentUserId
+        )),
+        records: records
+      }
     }
   },
   Like: {
