@@ -1,5 +1,6 @@
 type Query {
-  my: User
+  user(id: ID!): User
+  me: User
 }
 type Avatar {
   medium: String

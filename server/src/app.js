@@ -12,7 +12,13 @@ const typeDefs = fs.readFileSync(path.join(__dirname, 'schema.gql'), {
   encoding: 'utf-8'
 })
 
-const server = new ApolloServer({ typeDefs, resolvers })
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  context: ({ req }) => ({
+    user: {id: '1'} // Mock current user
+  })
+})
 
 const app = new Koa()
 app

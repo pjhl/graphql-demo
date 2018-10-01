@@ -2,11 +2,10 @@ const users = require('./data/users')
 const posts = require('./data/posts')
 const likes = require('./data/likes')
 
-const mockCurrentUserId = '1'
-
 const resolvers = {
   Query: {
-    my: () => users.getById(mockCurrentUserId)
+    user: (obj, args) => users.getById(args.id),
+    me: (obj, args, context) => users.getById(context.user.id)
   },
   User: {
     async posts (user) {
@@ -18,12 +17,12 @@ const resolvers = {
     async author (post) {
       return users.getById(post.authorId)
     },
-    async likes (post) {
+    async likes (post, args, context) {
       const records = await likes.getByPostId(post.id)
       return {
         total: records.length,
         currentUserLiked: Boolean(records.find(el =>
-          el.userId === mockCurrentUserId
+          el.userId === context.user.id
         )),
         records: records
       }
