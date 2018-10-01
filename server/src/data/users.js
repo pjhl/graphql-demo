@@ -3,8 +3,8 @@ const documents = [{
   name: 'Moshe Laxe',
   username: 'mkellert0',
   avatar: {
-    small: '/images/avatars/64x64.png/5fa2dd/ffffff',
-    medium: '/images/avatars/128x128.jpg/5fa2dd/ffffff'
+    small: 'https://api.adorable.io/avatars/64/1.png',
+    medium: 'https://api.adorable.io/avatars/128/1.png'
   }
 },
 {
@@ -12,17 +12,17 @@ const documents = [{
   name: 'Harley Storks',
   'username': 'hpontin1',
   'avatar': {
-    'small': '/images/avatars/64x64.jpg/cc0000/ffffff',
-    'medium': '/images/avatars/128x128.png/dddddd/000000'
+    'small': 'https://api.adorable.io/avatars/64/2.png',
+    'medium': 'https://api.adorable.io/avatars/128/2.png'
   }
 },
 {
   'id': '3',
   'name': 'Annadiana Lambregts',
-  'username': 'asiemens2 Fullick',
+  'username': 'asiemens2',
   'avatar': {
-    'small': '/images/avatars/64x64.png/dddddd/000000',
-    'medium': '/images/avatars/128x128.bmp/cc0000/ffffff'
+    'small': 'https://api.adorable.io/avatars/64/3.png',
+    'medium': 'https://api.adorable.io/avatars/128/3.png'
   }
 },
 {
@@ -30,8 +30,8 @@ const documents = [{
   'name': 'Augustine Gorham',
   'username': 'aboller3',
   'avatar': {
-    'small': '/images/avatars/64x64.bmp/5fa2dd/ffffff',
-    'medium': '/images/avatars/128x128.bmp/ff4444/ffffff'
+    'small': 'https://api.adorable.io/avatars/64/4.png',
+    'medium': 'https://api.adorable.io/avatars/128/4.png'
   }
 },
 {
@@ -39,8 +39,8 @@ const documents = [{
   'name': 'Kerby Whipp',
   'username': 'klilburne4',
   'avatar': {
-    'small': '/images/avatars/64x64.bmp/dddddd/000000',
-    'medium': '/images/avatars/128x128.jpg/dddddd/000000'
+    'small': 'https://api.adorable.io/avatars/64/5.png',
+    'medium': 'https://api.adorable.io/avatars/128/5.png'
   }
 },
 {
@@ -48,8 +48,8 @@ const documents = [{
   'name': 'Moritz Besnard',
   'username': 'mmacdearmont5',
   'avatar': {
-    'small': '/images/avatars/64x64.png/5fa2dd/ffffff',
-    'medium': '/images/avatars/128x128.png/cc0000/ffffff'
+    'small': 'https://api.adorable.io/avatars/64/6.png',
+    'medium': 'https://api.adorable.io/avatars/128/6.png'
   }
 },
 {
@@ -57,8 +57,8 @@ const documents = [{
   'name': 'Rad De Bruyne',
   'username': 'rhanes6',
   'avatar': {
-    'small': '/images/avatars/64x64.bmp/ff4444/ffffff',
-    'medium': '/images/avatars/128x128.png/5fa2dd/ffffff'
+    'small': 'https://api.adorable.io/avatars/64/7.png',
+    'medium': 'https://api.adorable.io/avatars/128/7.png'
   }
 },
 {
@@ -66,8 +66,8 @@ const documents = [{
   'name': 'Edeline Lumsdon',
   'username': 'eshadfourth7',
   'avatar': {
-    'small': '/images/avatars/64x64.jpg/dddddd/000000',
-    'medium': '/images/avatars/128x128.png/cc0000/ffffff'
+    'small': 'https://api.adorable.io/avatars/64/8.png',
+    'medium': 'https://api.adorable.io/avatars/128/8.png'
   }
 },
 {
@@ -75,8 +75,8 @@ const documents = [{
   'name': 'Weider e-Cartmale',
   'username': 'wsinderson8',
   'avatar': {
-    'small': '/images/avatars/64x64.jpg/ff4444/ffffff',
-    'medium': '/images/avatars/128x128.jpg/cc0000/ffffff'
+    'small': 'https://api.adorable.io/avatars/64/9.png',
+    'medium': 'https://api.adorable.io/avatars/128/9.png'
   }
 },
 {
@@ -84,8 +84,8 @@ const documents = [{
   'name': 'Dierdre Fullick',
   'username': 'doldis9',
   'avatar': {
-    'small': '/images/avatars/64x64.jpg/dddddd/000000',
-    'medium': '/images/avatars/128x128.png/dddddd/000000'
+    'small': 'https://api.adorable.io/avatars/64/10.png',
+    'medium': 'https://api.adorable.io/avatars/128/10.png'
   }
 }]
 
