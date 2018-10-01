@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { getUserPage } from '../actions/users'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 class Profile extends Component {
   componentDidMount () {
@@ -13,6 +14,11 @@ class Profile extends Component {
     }
     return <div>{JSON.stringify(data, undefined, 2)}</div>
   }
+}
+
+Profile.propTypes = {
+  loading: PropTypes.bool.isRequired,
+  data: PropTypes.object
 }
 
 function mapToStateprops (state) {
