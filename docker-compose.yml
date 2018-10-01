@@ -8,3 +8,11 @@ services:
       - '8081:80'
     volumes:
       - './server/src:/app/src:ro'
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - '8080:80'
+    volumes:
+      - './frontend/src:/app/src:ro'
+      - './frontend/public:/app/public:ro'
