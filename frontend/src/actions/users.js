@@ -1,6 +1,6 @@
 /* global fetch */
 
-const grapqlEntrypoint = 'http://localhost:8081/graphql'
+const grapqlEntrypoint = `http://${document.location.hostname}:8081/graphql`
 const userFragment = `
 id
 name
