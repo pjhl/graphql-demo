@@ -35,6 +35,19 @@ const resolvers = {
     async user (like) {
       return users.getById(like.userId)
     }
+  },
+  Mutation: {
+    async addPost (obj, args, context) {
+      const time = new Date()
+      const data = {
+        id: time.getTime().toString(),
+        authorId: context.user.id,
+        body: args.body,
+        date: time.toISOString()
+      }
+      await posts.add(data)
+      return data
+    }
   }
 }
 

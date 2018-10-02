@@ -30,3 +30,7 @@ type Post {
   date: String!
   likes: PostLikes
 }
+
+type Mutation {
+  addPost(body: String!): Post
+}
