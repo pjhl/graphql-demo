@@ -32,7 +32,6 @@ class PostsList extends Component {
   }
   render () {
     const { classes, records } = this.props
-    console.log(this.props)
     return <div className={classes.container}>
       {records.map((record, index) => {
         return <div key={index}>
