@@ -8,6 +8,7 @@ import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import Divider from '@material-ui/core/Divider'
 import CreatePost from './CreatePost'
+import PostsList from './PostsList'
 
 const styles = theme => ({
   root: {
@@ -61,6 +62,7 @@ class Profile extends Component {
           </Grid>
           <Divider className={classes.divider} />
           <CreatePost />
+          <PostsList />
         </div>
       </div>
     </Paper>
@@ -73,7 +75,7 @@ Profile.propTypes = {
   classes: PropTypes.object.isRequired
 }
 
-function mapToStateprops (state) {
+function mapStateToProps (state) {
   return {
     loading: state.users.loading,
     data: state.users.opened
@@ -82,7 +84,7 @@ function mapToStateprops (state) {
 
 export default compose(
   withStyles(styles),
-  connect(mapToStateprops, {
+  connect(mapStateToProps, {
     getUserPage
   })
 )(Profile)

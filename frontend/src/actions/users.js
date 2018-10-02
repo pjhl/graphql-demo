@@ -11,6 +11,7 @@ avatar {
 posts {
   author {
     name
+    username
     avatar {
       small
     }

@@ -10,7 +10,7 @@ Features:
 * List of 10 posts per page, next posts can be loaded with button "Load more"
 * Users can to like own and anothers posts
 * Everyone can see the likes
-* Users can write coments
+* Users can write comments
 
 
 ## Start
